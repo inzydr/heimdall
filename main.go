@@ -22,7 +22,13 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"message": "Hello, Railway!",
+			"message": "Hello, There!",
+		})
+	})
+
+	app.Get("/obi-wan", func(c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"message": "Obi-Wan Kenobi",
 		})
 	})
 
